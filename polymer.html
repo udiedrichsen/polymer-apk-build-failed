@@ -1,0 +1,47 @@
+<head>
+  <title>polymer</title>
+<!--
+ <link rel="import" href="/bower_components/iron-icon/iron-icon.html">
+  <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+
+  <link rel="import" href="/bower_components/paper-button/paper-button.html">
+  <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="/bower_components/paper-toggle-button/paper-toggle-button.html"> 
+  <link rel="import" href="/bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="/bower_components/paper-dialog/paper-dialog.html">
+  <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+-->
+</head>
+
+<body>
+<paper-toolbar class="tall">
+  <paper-icon-button icon="menu"></paper-icon-button>
+  <div title class="middle">Middle Title</div>
+  <div title class="bottom">Bottom Title</div>
+</paper-toolbar>
+
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+
+<paper-checkbox checked> label</paper-checkbox>
+<paper-icon-button icon="menu"></paper-icon-button>
+<paper-toggle-button></paper-toggle-button>
+
+<paper-dialog id="dialog">
+  <h2>Header</h2>
+  <paper-dialog-scrollable>
+    Lorem ipsum...
+  </paper-dialog-scrollable>
+  <div class="buttons">
+    <paper-button dialog-dismiss>Cancel</paper-button>
+    <paper-button dialog-confirm>Accept</paper-button>
+  </div>
+</paper-dialog>
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
