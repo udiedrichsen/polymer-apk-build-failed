@@ -8,6 +8,7 @@ Run fine in brower but I try to build this:
 meteor build ../BUILDDIR --server 192.168.178.53:3000
 
 When I try to run it on an android-device is the app is not starting on the device (works also not in the emulator):
+
 meteor run android-device
 
 # Error message
@@ -24,3 +25,7 @@ Error: The APK file for the Android build was not found.
     at buildCommand (/Users/doedel/.meteor/packages/meteor-tool/.1.1.3.1wysac9++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/tools/commands.js:933:29)
     at Command.main.registerCommand._.extend.name [as func] (/Users/doedel/.meteor/packages/meteor-tool/.1.1.3.1wysac9++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/tools/commands.js:746:12)
     at /Users/doedel/.meteor/packages/meteor-tool/.1.1.3.1wysac9++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/tools/main.js:1363:23
+
+# Building the APP without android platform works.
+
+# Building the APP for ios platform works also !
