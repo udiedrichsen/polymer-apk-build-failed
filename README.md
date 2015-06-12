@@ -11,6 +11,19 @@ When I try to run it on an android-device is the app is not starting on the devi
 
 meteor run android-device
 
+# Reproduce this error
+git clone https://github.com/udiedrichsen/polymer-apk-build-failed
+cd polymer-apk-build-failed
+meteor update
+meteor
+
+Check localhost : Looks ok, Polymer works.
+
+Ctrl-c to stop meteor
+
+mkdir ../builddir
+meteor build ../builddir --server 192.168.178.53:3000 
+
 # Error message
 meteor build ../BUILDDIR --server 192.168.178.53:3000
                                               
